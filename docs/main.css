@@ -68,8 +68,8 @@ body{
     background-color: beige;
     color: black;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40% 1fr;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 1fr;
 
 }
 
@@ -103,7 +103,7 @@ body{
 
 #imageContainer{
     background-image: url(ac9cb45d1091de8ee2ae.gif);
-    background-size:auto;
+    background-size:cover;
     display: flex;
     justify-content: center;
     align-items: center;

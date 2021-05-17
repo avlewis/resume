@@ -4,8 +4,8 @@ body{
     background-color: beige;
     color: black;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40% 1fr;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 1fr;
 
 }
 
@@ -39,7 +39,7 @@ body{
 
 #imageContainer{
     background-image: url('../assets/test.gif');
-    background-size:auto;
+    background-size:cover;
     display: flex;
     justify-content: center;
     align-items: center;
