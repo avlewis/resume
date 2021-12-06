@@ -1,5 +1,3 @@
-import "@fontsource/roboto"
-import "./css/base.css"
-
-
+import "@fontsource/roboto";
+import './css/base.css';
 

@@ -1,52 +1,79 @@
-body{
-    font-family: "Roboto";
+:root {
+    --black: #1f1f1f;
+    --background: #f6f9fc;
+
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+
+
+body {
     margin: 0;
-    background-color: beige;
-    color: black;
-    display: grid;
-    grid-template-columns: 50% 1fr;
-    grid-template-rows: 1fr;
+
+    background-color: var(--black);
+    color: white;
 
 }
 
-
-.card {
-
-    border-radius: 5px;
-    background-color: white;
-    padding: 5%;
-    width: 50%;
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    justify-items: center;
-    text-align: center;
-
 }
 
-.card > a {
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 3%;
+    height: 50vh;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+@media only screen and (max-width: 600px) {
+    .model {
+      display: none;
+    }
+  }
+
+.header .model {
+}
+
+.section {
     padding: 2%;
 }
 
-#profilePic {
-
-    border-radius: 100%;
-    height: 30%;
-    width: 30%;
-    flex-shrink: 0;
-    border: 5px solid #555;
-
-    
+.section-title {
+    font-size: 2rem;
 }
 
-#imageContainer{
-    background-image: url('../assets/test.gif');
-    background-size:cover;
+.section-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 150px;
+    border-radius: 30px;
+}
+
+.link-container {
+}
+
+.icon-link {
+    height: auto; 
+    width: auto; 
+    max-width: 25px; 
+    max-height: 25px;
+    margin-right: 1em;
 
 }
-#bodyContainer{
-    padding: 1em;
-    overflow-y: scroll;
-    height: 100vh;
-}
+
